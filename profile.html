@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tableprofile
+        {
+            border-collapse: collapse;
+            color:black;
+            background-color:beige;
+            font-size: 30px;
+            width:100%;
+            margin-top: 10%;
+            margin-left: 5%;
+            
+        }
+        body{
+            background-color: lightseagreen;
+            text-align: center;
+            
+        }
+        main{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 150px;
+        }
+        .top
+        {
+            color: rgb(252, 250, 250);
+            background-color: black;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .text
+        {
+            height: 300px;
+            width: 500px;
+            background-color:rgb(181, 101, 218);
+            color: rgb(41, 35, 36);
+            font-size: 25px;
+            border-radius: 20px;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            font-size: 30px;
+            font-weight: bold;
+            
+            background-color: cornsilk;
+            border-radius: 10px;
+        }
+        .sub
+        {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 100px;
+            gap: 20px;
+            margin-left:80% ;
+
+        }
+        footer
+        {
+            text-align: center
+        }
+        #image{
+            margin-top: 25%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="top">
+        <h1>PROFILE</h1>
+    </div>
+    <main>
+    <div id="one">
+        <table border="6" id="tableprofile">
+            </tr>
+            
+            <tr>
+              <td>Email ID:</td>
+              <td>23it184@skcet.ac.in</td>
+            </tr>
+            
+            <tr>
+              <td>Mobile No:</td>
+              <td>xxxxxxx985</td>
+            </tr>
+            <tr>
+              <td>Date of Birth:</td>
+              <td>08-June-2005</td>
+            </tr>
+            <tr>
+              <td>Nationality:</td>
+              <td>INDIAN</td>
+            </tr>
+            <tr>
+              <td>Religion:</td>
+              <td>Muslim</td>
+            </tr>
+            <tr>
+              <td>Staus:</td>
+              <td>Unmarried</td>
+            </tr>
+            <tr>
+              <td>Skills:</td>
+              <td><ul class="skill">
+                <li>Good in Speaking</li>
+                <li>Hardworker</li>
+                <li>Stress managing</li>
+              </ul> </td>
+            </tr>
+            <tr>
+              <td>Hobbies:</td>
+              <td>
+                <ul class="hobby">
+                  <li>Reading</li>
+                  <li>Playing Chess</li>
+                  <li>Painting</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Languages Known:</td>
+              <td>Tamil,English,Hindi</td>
+            </tr>
+            <tr>
+              <td>Address:</td>
+              <td>19-1,Muslim middle street,Thiruppuvanam pudur,Sivagangai</td>
+            </tr>
+  
+          </table>
+       <div class="sub">
+                  <textarea class="text" rows="30" cols="80"></textarea>
+        <footer>
+            <h3 id="text"></h3>
+        <button onclick="send()">Send</button>
+        </footer>
+        </div>
+    </div>
+    <div id="image">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png">
+        <h1>SABANA.H</h1>
+        <h1>B.Tech IT</h1>
+      </div>
+    
+    </main>
+    <script>
+        function send()
+        {
+            document.getElementById('text').innerHTML="Message sent"
+        }
+    </script>
+</body>
+</html>
